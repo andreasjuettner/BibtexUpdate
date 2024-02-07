@@ -12,7 +12,7 @@ import sys
  Requries: spires (https://www.stringwiki.org/wiki/SPIRES_script)
 """
 
-path=sys.arg[1]
+path=sys.argv[1]
 cnt=0
 beprint=0
 bjournal=0
