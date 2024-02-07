@@ -37,13 +37,13 @@ for line in open(path, 'r'):
     curr=re.compile("^@.*{(.*),").match(current).groups()
     if beprint==0:
      print("############################################################################")
-     print("%s has no eprint tag in current FLAG.bib"%curr[0])
+     print("%s has no eprint tag in current input file"%curr[0])
     if ((bjournal==0) and (beprint==1)):
      eprint=re.findall('\".*',eprintline)[0][1:-2]
      rType, ref = spires.findRefType(eprint)
      print(rType,ref)
      print("############################################################################")
-     print("%s has no journal entry in current FLAG.bib "%curr[0])
+     print("%s has no journal entry in current input file "%curr[0])
      inputString = spires.getBiBTeX(ref,rType).decode("utf-8")
      new = inputString.split('\n')
      for line2 in new:
