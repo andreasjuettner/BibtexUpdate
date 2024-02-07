@@ -5,7 +5,7 @@ import sys
 
 """
  Usage: python BibtexUpdate.py <path to bibtex file>
- The file queries the inspirehep data base for updtes of entries in a bibtex file
+ The code queries the inspirehep data base for updtes of entries in a bibtex file
  and reports output.
  andreas.juttner@cern.ch
 
